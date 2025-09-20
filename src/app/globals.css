@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  --brand-yellow: #F6C106;
-  --brand-burgundy: #510833;
-  --brand-green: #0E9252;
+  --brand-yellow: #510b0b;
+  --brand-burgundy: #510b0b;
+  --brand-green: #ece0e0;
   --background: var(--brand-burgundy);
   --foreground: var(--brand-yellow);
 }

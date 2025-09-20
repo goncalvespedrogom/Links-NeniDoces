@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Açaí Tropicalia | Links",
-  description: "Encontre todos os links oficiais do Açaí Tropicalia.",
+  title: "Neni Doces | Links",
+  description: "Encontre todos os links oficiais da Neni Doces.",
 };
 
 export default function RootLayout({
