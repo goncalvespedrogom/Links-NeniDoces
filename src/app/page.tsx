@@ -3,6 +3,7 @@ import Image from "next/image";
 type LinkItem = {
   label: string;
   href: string;
+  download?: boolean;
 };
 
 const LINKS: LinkItem[] = [
@@ -17,6 +18,11 @@ const LINKS: LinkItem[] = [
   { 
     label: "INSTAGRAM", 
     href: "https://www.instagram.com/nenidoces/" 
+  },
+  {
+    label: "ENCOMENDAS",
+    href: "/cardapio.pdf",
+    download: true,
   },
 ];
 
@@ -39,8 +45,9 @@ export default function Home() {
             <a
               key={link.label}
               href={link.href}
-              target="_blank"
-              rel="noopener noreferrer"
+              target={link.download ? undefined : "_blank"}
+              rel={link.download ? undefined : "noopener noreferrer"}
+              download={link.download}
               className="group select-none inline-flex items-center justify-center h-[70px] rounded-[42px] text-[22px] font-bold tracking-wide transition-transform duration-150 active:translate-y-[2px] hover:opacity-90"
               style={{
                 color: "#510b0b",
